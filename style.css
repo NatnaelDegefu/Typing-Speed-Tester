@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.difficulty-box {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.quote {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+.quote span.correct {
+    color: #22c55e;
+}
+
+.quote span.incorrect {
+    color: #ef4444;
+}
+
+.quote span.active {
+    background: #38bdf8;
+    color: black;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    resize: none;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media(max-width: 700px) {
+
+    .top-bar {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

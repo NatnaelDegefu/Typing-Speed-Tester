@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TypeRush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>⌨️ TypeRush</h1>
+
+        <div class="top-bar">
+            <div class="stat">
+                <span>⏱ Time:</span>
+                <span id="timer">0</span>s
+            </div>
+
+            <div class="stat">
+                <span>⚡ WPM:</span>
+                <span id="wpm">0</span>
+            </div>
+
+            <div class="stat">
+                <span>🎯 Accuracy:</span>
+                <span id="accuracy">100</span>%
+            </div>
+
+            <div class="stat">
+                <span>❌ Mistakes:</span>
+                <span id="mistakes">0</span>
+            </div>
+        </div>
+
+        <div class="difficulty-box">
+            <label>Select Difficulty:</label>
+
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div id="quote" class="quote"></div>
+
+        <textarea
+            id="input"
+            placeholder="Start typing here..."
+            autocomplete="off"
+        ></textarea>
+
+        <div class="buttons">
+            <button id="restartBtn">Restart</button>
+        </div>
+
+        <div class="result" id="resultMessage"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
